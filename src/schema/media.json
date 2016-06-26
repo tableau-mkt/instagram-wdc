@@ -1,0 +1,148 @@
+{
+  "defaultAlias": "Media",
+  "description": "Instagram Media for a given user",
+  "id": "media",
+  "incrementColumnId": "id",
+  "columns": [
+    {
+      "id": "id",
+      "dataType": "string",
+      "alias": "Media ID",
+      "description": "Identifier used by Instagram to uniquely identify a single media item among all media on the platform.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "comment_count",
+      "dataType": "int",
+      "alias": "Comment Count",
+      "description": "Number of comments on this piece of media.",
+      "columnRole": "measure",
+      "columnType": "discrete"
+    },
+    {
+      "id": "caption_text",
+      "dataType": "string",
+      "alias": "Caption Text",
+      "description": "Caption text associated with this media.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "like_count",
+      "dataType": "int",
+      "alias": "Like Count",
+      "description": "Number of likes on this piece of media.",
+      "columnRole": "measure",
+      "columnType": "discrete"
+    },
+    {
+      "id": "link",
+      "dataType": "string",
+      "alias": "Link",
+      "description": "Link to this piece of media within the Instagram chrome.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "user_name",
+      "dataType": "string",
+      "alias": "User Handle",
+      "description": "Name of the user who posted this piece of media.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "user_full_name",
+      "dataType": "string",
+      "alias": "Full Name",
+      "description": "Full name of the user who posted this piece of media.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "user_picture",
+      "dataType": "string",
+      "alias": "User Picture",
+      "description": "URL of the user's avatar.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "user_id",
+      "dataType": "int",
+      "alias": "User ID",
+      "description": "Identifier used by Instagram to uniquely identify a single user on the platform.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "created_time",
+      "dataType": "datetime",
+      "alias": "Created At",
+      "description": "Date/time when the media item was posted.",
+      "columnRole": "dimension",
+      "columnType": "continuous"
+    },
+    {
+      "id": "media_url",
+      "dataType": "string",
+      "alias": "Media URL",
+      "description": "URL pointing to the raw media item (image/video).",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "type",
+      "dataType": "string",
+      "alias": "Media Type",
+      "description": "Type of media (image/video)",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "type",
+      "dataType": "string",
+      "alias": "Filter",
+      "description": "Filter applied to this media item.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "location_lat",
+      "dataType": "float",
+      "alias": "Location (Latitude)",
+      "description": "Latitude coordinate associated with this media item."
+    },
+    {
+      "id": "location_lon",
+      "dataType": "float",
+      "alias": "Location (Longitude)",
+      "description": "Longitude coordinate associated with this media item."
+    },
+    {
+      "id": "location_id",
+      "dataType": "int",
+      "alias": "Location ID",
+      "description": "Identifier used by Instagram to uniquely identify a single location on the platform.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "location_address",
+      "dataType": "string",
+      "alias": "Location Address",
+      "description": "Street address associated with this media item.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    },
+    {
+      "id": "location_name",
+      "dataType": "string",
+      "alias": "Location Name",
+      "description": "Name of the location associated with this media item.",
+      "columnRole": "dimension",
+      "columnType": "discrete"
+    }
+  ]
+}

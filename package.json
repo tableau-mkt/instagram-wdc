@@ -1,0 +1,34 @@
+{
+  "name": "instagram-wdc",
+  "description": "Tableau web data connector for Instagram.",
+  "version": "2.0.0",
+  "engines": {
+    "node": "4.4.x"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "true",
+    "postinstall": "grunt build"
+  },
+  "keywords": [
+    "tableau-wdc",
+    "instagram"
+  ],
+  "dependencies": {
+    "express": "^4.13.3",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-concat": "~0.5",
+    "grunt-contrib-jshint": "~0.11",
+    "grunt-contrib-uglify": "~0.9",
+    "request": "^2.61.0",
+    "sha1": "^1.1.1"
+  },
+  "devDependencies": {
+    "grunt-express-server": "~0.5",
+    "grunt-contrib-watch": "~0.6",
+    "jsdom": "^3.1.2",
+    "mocha": "^2.2.5",
+    "sinon": "^1.16.1"
+  }
+}
